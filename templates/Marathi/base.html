@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiddhiVinayak Ganapati</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/v5/icons/sun?f=classic&s=solid">
+    <script src="https://kit.fontawesome.com/4381c59eae.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:200&subset=latin' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:800&subset=latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block links %}
+    {% endblock links %}
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/script/script.js"></script>
+    <style>
+    {% block style %}
+    {% endblock style %}
+    </style>
+</head>
+<section class="top-nav">
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div><img class="logo" src="/static/images/logo.png"/></div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="{% url 'home' %}"><b>होम</b></a></li>
+
+                <li><a href="{% url 'darshan' %}">
+                  <div class="cdot dot"></div><b> लाइव दर्शन</b>
+                </a></li>
+
+                <li class="dropdown">
+                   <b>आमच्याबद्दल</b>
+                    <div class="dropdown-content">
+                        <a href="{% url 'about' %}"><b>मंदिर इतिहास</b></a>
+                        <a href="{% url 'trustees' %}"><b>संचालक</b></a>
+                        <a href="{% url 'architecture' %}"><b>Temple Architecture</b></a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                  <b>मंदिर वेळापत्रक</b>
+                   <div class="dropdown-content">
+                       <a href="{% url 'dailyseva' %}"><b>मंदिर दैनिक सेवा</b></a>
+                       <a href="{% url 'mahaabhishekh' %}"><b>महाआभिषेक</b></a>
+                       <!-- <a href="samugrahi_m.html"><b>अभिषेक समुग्रही</b></a> -->
+                   </div>
+               </li>
+
+               <li><a href="{% url 'Festivals' %}"><b>उत्सव</b></a></li>
+
+             <li class="dropdown">
+              <b>गॅलरी</b>
+               <div class="dropdown-content">
+                   <a href="{% url 'imagegallery' %}"><b>चित्र गॅलरी</b></a>
+                   <a href="{% url 'videogallery' %}"><b>व्हिडिओ गॅलरी</b></a>
+                   <a href="{% url 'othergallery' %}"><b>इतर चित्रे</b></a>
+               </div>
+           </li>
+
+           <li class="dropdown">
+            <b>मंदिर E सेवा</b>
+             <div class="dropdown-content">
+                 <a href="{% url 'poojadetails' %}"><b>पूजा तपशील</b></a>
+                 <!-- <a href="booking_m.html"><b>ऑनलाइन बुकिंग</b></a> -->
+             </div>
+         </li>
+
+         <li><a href="{% url 'donation' %}"><b>दान</b></a></li>
+
+                <li><a href="{% url 'contact' %}"><b>आमच्याशी संपर्क साधा</b></a></li>
+
+                <li class="dropdown">
+                  <b>भाषा</b>
+                   <div class="dropdown-content">
+                    <a href="{% url 'switch' %}"><b>इंग्रजी</b></a>
+                    <a><b>मराठी</b></a>
+                   </div>
+               </li>
+            </div>
+        </ul>
+    </nav>
+</section>
+<body>
+{% block body %}
+
+{% endblock body %}
+<footer class="main-footer">
+    <div class="footer-info">
+        <div class="footer-links">
+            <span class="footer-header">आमच्याबद्दल</span>
+            <a href="index_m.html"><span>ॐ होम</span></a>
+            <a href="livedarshan_m.html"><span>ॐ लाइव दर्शन</span></a>
+            <a href="history_m.html"><span>ॐ मंदिराबद्दल</span></a>
+            <a href="boardmembers_m.html"><span>ॐ बोर्ड सदस्य</span></a>
+        </div>
+    
+        <div class="footer-links">
+            <span class="footer-header">सेवा</span>
+            <a href="dailyseva_m.html"><span>ॐ दैनिक सेवा</span></a>
+            <a href="pooja_m.html"><span>ॐ पूजा सेवा</span></a>
+            <a href="Mahaabhishek_m.html"><span>ॐ महाअभिषेक सेवा</span></a>
+            <a href="donation_m.html"><span>ॐ दान</span></a>
+        </div>
+        <div class="footer-links">
+            <span class="footer-header">इतर</span>
+            <a href="contact_m.html"><span>ॐ आम्हाला संपर्क साधा</span></a>
+            <a href="imagegallery_m.html"><span>ॐ गॅलरी</span></a>
+            <!-- <a href="chaturthi_m.html"><span>ॐ उत्सव</span></a> -->
+        </div>
+    </div>
+    
+
+  <!-- <div class="about-footer">
+
+      <a herf="" target="_blank">
+          <i class="fa fa-twitter"  ></i>
+      </a>
+      <a href="" target="_blank">
+          <i class="fa fa-envelope" ></i>
+      </a>
+      <a href="" target="_blank">
+          <i class="fa fa-youtube-play" ></i>
+      </a>
+      <a href="" target="_blank">
+          <i class="fa fa-map-marker"></i> 
+      </a> 
+      <a href="" target="_blank">
+          <i class="fa fa-facebook-square"></i> 
+      </a>
+    </div> -->
+
+     
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

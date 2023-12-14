@@ -1,0 +1,24 @@
+{% extends "Marathi/base.html" %}
+{% block links %}
+  <link rel="stylesheet" href="/static/css/gallery.css">
+{% endblock links %}
+{% block body %}
+<div class="background-container">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+
+ <h1 style="font-family: 'Poppins',sans-serif;font-weight: bolder;width: 100%; text-align: center;font-size: 3.5em;color: #1f003b;margin-top:150px;margin-bottom: 3rem;">फोटो गॅलरी</h1>
+ <div class="photo-gallery">
+  <div class="container" >
+      <div class="row photos" style="display: flex; justify-content: center; align-items: center;">
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery1.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery1.jpeg"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery2.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery2.jpeg"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery3.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery3.jpeg"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery4.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery4.jpeg"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery5.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery5.jpeg"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery6.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery6.jpeg"></a></div>
+          <div class="col-sm-6 col-md-4 col-lg-4 item"><a href="/static/images/imagegallery/imagegallery7.jpeg" data-lightbox="photos"><img class="img-fluid" src="/static/images/imagegallery/imagegallery7.jpeg"></a></div>
+      </div>
+  </div>
+</div>
+{% endblock body %}

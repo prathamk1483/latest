@@ -1,0 +1,26 @@
+{% extends "English/base.html" %}
+{% block links %}
+  <link rel="stylesheet" href="/static/css/gallery.css">
+  <link rel="stylesheet" href="/static/css/navbar.css">
+  <link rel="stylesheet" href="/static/css/footer.css">
+{% endblock links %}
+
+{% block body %}
+<div class="background-container">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+ <h1 style="font-family: 'Poppins',sans-serif;font-weight: bolder;width: 100%; text-align: center;font-size: 3.5em;color: #1f003b;margin-top:150px;margin-bottom: 3rem;">Other Photos Gallery</h1>
+ <div class="photo-gallery">
+  <div class="container" >
+      <div class="row photos" style="display: flex;">
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery1.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery1.jpeg"></a></div>
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery2.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery2.jpeg"></a></div>
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery3.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery3.jpeg"></a></div>
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery4.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery4.jpeg"></a></div>
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery5.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery5.jpeg"></a></div>
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery6.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery6.jpeg"></a></div>
+          <div style="display: block; height: 25em; width:100%; margin-bottom: 40px;" class="col-sm-6 col-md-4 col-lg-4 genie"><a href="/static/images/othergallery/othergallery7.jpeg" data-lightbox="photos"><img  class="img-fluid" src="/static/images/othergallery/othergallery7.jpeg"></a></div>
+      </div>
+  </div>
+</div>
+{% endblock body %}

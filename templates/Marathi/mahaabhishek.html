@@ -1,0 +1,71 @@
+{% extends "Marathi/base.html" %}
+
+{% block style %}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+     /* Adjust this value according to your footer's height */
+}
+
+.container {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Adjust this value to match the padding-bottom of the body */
+}
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        th {
+            background-color: #FF2525;
+            color: white;
+        }
+        .container mt-5{
+            margin-bottom: 50px;
+        }
+{% endblock style %}
+{% block body %}
+<div class="background-container" style="margin-top: -70px;">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+ 
+  <div class="container mt-5">
+    <h2>महाआभिषेक आणि गणेशयज्ञ वेळापत्रक</h2>
+    <p class="mb-4">आपल्या मंदिरातील महाआभिषेक आणि गणेशयज्ञ वेळापत्रक पहा: <br><br>
+    <!-- पूजा बुकिंग कार्यालय वेळापत्रक <br><br><b>दररोज 7:00 वाजता सकाळी 7:00 वाजता संध्याकाळी मंदिर परिसरातील बुकिंग काउंटरवर</b><br><br>
+    पुर्णपणाच्या पूजा केवळ प्राध्यापक पुरोहितांच्या प्राधिकृत मार्गदर्शनानुसार आणि निर्देशानुसार केल्या जातात <br><br></p> -->
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="background-color: #FF2525;">मंदिर वेळापत्रक</th>
+                    <th style="background-color: #FF2525;">पूजा/क्रियाकलाप</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:00 सकाळी - 3:00 वाजता</td>
+                    <td>प्रतिदिन आभिषेक</td>
+                </tr>
+                <tr>
+                    <td>8:00 सकाळी - 12:00 वाजता</td>
+                    <td>मासिक गणेशयज्ञ (प्रत्येक मंगळवार आणि विनायक चतुर्थी).</td>
+                </tr>
+                <tr>
+                    <td>8:00 सकाळी - 12:00 वाजता</td>
+                    <td>महत्वाच्या गणेशयज्ञ उत्सव<br>(गुढीपाडवा, अक्षय तृतीया, दिवाळी पाडवा, गणेश जयंती).</td>
+                </tr>
+                <tr>
+                    <td>8:00 सकाळी - 10:00 वाजता</td>
+                    <td>संकष्टी चतुर्थी महाआभिषेक</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}

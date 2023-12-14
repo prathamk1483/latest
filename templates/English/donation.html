@@ -1,0 +1,143 @@
+{% extends "English/base.html" %}
+{% block style %}
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            color: #333333;
+        }
+
+        .qr:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fffefe;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .qr img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        @media (min-width:930px) {
+            .menu {
+                display: flex;
+            }
+
+            .qr {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .qr-content {
+                margin-right: 40px;
+            }
+
+            .hamburger {
+                display: none;
+            }
+        }
+
+        .payment-info {
+            background-color: #f7f7f7;
+            padding: 50px 0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .card-body {
+                padding: 20px;
+            }
+
+            .card-title {
+                font-size: 24px;
+            }
+
+            .info p {
+                font-size: 16px;
+            }
+        }
+{% endblock style %}
+
+{% block body %}
+<div class="background-container" style="margin-top: -70px;">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+
+    <h2 style="text-align: center;margin-top: 20px;">Donations</h2>
+    <section class="qr">
+
+        <div>
+
+            <h1><b>Jai Ganesh</b></h1><br>
+            <p><b>To make a donation you can scan the QR code with any BHIM UPI App.</b></p><br>
+            <p>Any amount you donate big or small will be contributed to the wellbeing of the people</p><br>
+
+        </div>
+        <div>
+            <img src="/static/images/qrcode.jpg" alt="chrome" style="border-radius: 30px;">
+        </div>
+    </section>
+
+    <section class="payment-info">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Payment Information</h2>
+                    <div class="info">
+                        <p><strong>Siddhi Vinayak Ganpati Sansthan Waygaon</strong></p>
+                        <p><strong>Pan no:</strong> AAETS7200C</p>
+                        <p><strong>Bank Details:</strong> Bank of India, Jaisthamb Chowk, Amravati.</p>
+                        <p><strong>A/c No:</strong> 967510100012849</p>
+                        <p><strong>IFSC Code:</strong> BKID0009675</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock body %}
+

@@ -1,0 +1,105 @@
+{% extends "English/base.html" %}
+{% block links %}
+<link rel="stylesheet" href="/static/css/timeline.css">
+<link rel="stylesheet" href="/static/css/navbar.css">
+<link rel="stylesheet" href="/static/css/footer.css">
+{% endblock links %}
+{% block style %}
+      body{
+        background-color: rgb(255 157 67 / 40%);         
+      }
+      .background-container {
+        position: relative;
+        padding-top: 70px;  
+      }
+      
+      .background-image {
+        width: 100%;
+      }
+      
+      .overlay-image {
+        position: absolute;
+        top: 9%;
+        left: 37%;
+        z-index: 1;
+        height: 15rem;
+        width: auto;
+      }
+      @media (max-width: 768px) {
+    .background-image {
+        background-size: 150% 100%; 
+    }
+}
+{% endblock style %}
+{% block body %}
+  <div class="background-container">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+
+    <section>
+      <div class="timeline tab-content" id="tab6">
+        <center> <h1 style="font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: bold; margin-top: -9rem; margin-bottom: 3rem;">
+            <span id="timeline-title-en">Daily Schedule</span><span id="timeline-title-mr" style="display: none;">दैनंदिन कार्यक्रम</span></h1></center>
+
+        <div class="container right">
+            <div class="date" style="left: 14px;">6:00 am</div>
+            <div class="content">
+                <h2><span id="event-templeopens-en">Temple Opens</span><span id="event-templeopens-mr" style="display: none;">मंदिर उघडतो</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date" style="left: -62px;">7:00 am - 8:00 am</div>
+            <div class="content">
+                <h2><span id="event-dailyabhishek-en">Daily Abhishek & Aarti</span><span id="event-dailyabhishek-mr" style="display: none;">रोजची अभिषेक आणि आरती</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date" style="left: -70px;">8:00 am - 12:30 pm</div>
+            <div class="content">
+                <h2><span id="event-darshangeneral-en">Darshan for general public</span><span id="event-darshangeneral-mr" style="display: none;">सामान्य लोकांसाठी दर्शन</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date">12:00 pm - 1:00 pm</div>
+            <div class="content">
+                <h2><span id="event-naivadyam-aarti-en">Naivadyam Aarti</span><span id="event-naivadyam-aarti-mr" style="display: none;">नैवेद्य आरती</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date" style="left: -61px;">1:00 pm - 6:00 pm</div>
+            <div class="content">
+                <h2><span id="event-darshangeneral-en">Darshan for general public</span><span id="event-darshangeneral-mr" style="display: none;">सामान्य लोकांसाठी दर्शन</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date" style="left: -61px;">7:00 pm - 7:30 pm</div>
+            <div class="content">
+                <h2><span id="event-eveningaarti-en">Evening Aarti</span><span id="event-eveningaarti-mr" style="display: none;">संध्याआरती</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date" style="left: -62px;">9:00 pm - 9:30 pm</div>
+            <div class="content">
+                <h2><span id="event-panchpadi-en">Panchpadi</span><span id="event-panchpadi-mr" style="display: none;">पंचपाडी</span></h2>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="date" style="left: 5px;">10:00 pm</div>
+            <div class="content">
+                <h2><span id="event-templecloses-en">Temple Closes</span><span id="event-templecloses-mr" style="display: none;">मंदिर बंद होतो</span></h2>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+      <div id="footer-placeholder"></div>
+
+{% endblock body %}   
