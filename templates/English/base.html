@@ -109,24 +109,24 @@
         <div class="footer-info">
               <div class="footer-links">
                   <span class="footer-header">About Us</span>
-                  <a href="index.html "><span>ॐ Home</span></a>
-                  <a href="livedarshan.html"><span>ॐ Live Darshan</span></a>
-                  <a href="history.html"><span>ॐ About the Temple</span></a>
-                  <a href="boardmembers.html"><span>ॐ Board Members</span></a>                  
+                  <a href="{% url 'home' %}"><span>ॐ Home</span></a>
+                  <a href="{% url 'darshan' %}"><span>ॐ Live Darshan</span></a>
+                  <a href="{% url 'about' %}"><span>ॐ About the Temple</span></a>
+                  <a href="{% url 'trustees' %}"><span>ॐ Board Members</span></a>                  
                  </div>
          
              <div class="footer-links">
               <span class="footer-header">Seva</span>
-                  <a href="dailyseva.html"> <span>ॐ Daliy Seva</span></a>
-                  <a href="pooja.html">  <span>ॐ Pooja Seva</span></a>
-                  <a href="Mahaabhishek.html">  <span>ॐ Mahabhishek Seva</span></a>
-                  <a href="donation.html"><span>ॐ Donation</span></a>
+                  <a href="{% url 'dailyseva' %}"> <span>ॐ Daliy Seva</span></a>
+                  <a href="{% url 'poojadetails' %}">  <span>ॐ Pooja Seva</span></a>
+                  <a href="{% url 'mahaabhishekh' %}">  <span>ॐ Mahabhishek Seva</span></a>
+                  <a href="{% url 'donation' %}" ><span>ॐ Donation</span></a>
              </div>
              <div class="footer-links">
                 <span class="footer-header">Others</span>
-                    <a href="contact.html"> <span>ॐ Contact Us</span></a>
-                    <a href="imagegallery.html"><span>ॐ Gallery</span></a>
-                    <!-- <a href="chaturthi.html">  <span>ॐ Festivals</span></a> -->
+                    <a href="{% url 'contact' %}"> <span>ॐ Contact Us</span></a>
+                    <a href="{% url 'imagegallery' %}"><span>ॐ Gallery</span></a>
+                    <a href="{% url 'Festivals' %}">  <span>ॐ Festivals</span></a>
                </div>
         </div>
     
