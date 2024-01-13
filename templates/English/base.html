@@ -58,15 +58,19 @@
                             <a href="{% url 'architecture' %}"><b>Temple Architecture</b></a>
                         </div>
                     </li>
-    
-                    <li class="dropdown">
+
+                    <li><a href="{% url 'mahaabhishekh' %}">
+                        <div></div><b>Mahabhishek</b>
+                      </a></li>
+
+                    {% comment %} <li class="dropdown">
                       <b>Temple Schedule</b>
                        <div class="dropdown-content">
-                           <a href="{% url 'dailyseva' %}"><b>Temple Daily Seva</b></a>
+                           
                            <a href="{% url 'mahaabhishekh' %}"><b>Mahabhishek</b></a>
                            <!-- <a href="samugrahi.html"><b>Abhishek Samugrahi</b></a> -->
                        </div>
-                   </li>
+                   </li> {% endcomment %}
     
                    <li><a href="{% url 'Festivals' %}"><b>Festivals</b></a></li>
     
@@ -83,6 +87,7 @@
                 <b>Temple E seva</b>
                  <div class="dropdown-content">
                      <a href="{% url 'poojadetails' %}"><b>Pooja Details</b></a>
+                     <a href="{% url 'dailyseva' %}"><b>Temple Daily Seva</b></a>
                      <!-- <a href="booking.html"><b>Online Booking</b></a> -->
                  </div>
              </li>
