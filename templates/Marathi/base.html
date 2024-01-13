@@ -55,18 +55,18 @@
                     <div class="dropdown-content">
                         <a href="{% url 'about' %}"><b>मंदिर इतिहास</b></a>
                         <a href="{% url 'trustees' %}"><b>संचालक</b></a>
-                        <a href="{% url 'architecture' %}"><b>Temple Architecture</b></a>
+                        <a href="{% url 'architecture' %}"><b>मंदिर स्थापत्यशास्त्र </b></a>
                     </div>
                 </li>
-
-                <li class="dropdown">
+                <li><a href="{% url 'mahaabhishekh' %}"><b>महाआभिषेक</b></a></li>
+                {% comment %} <li class="dropdown">
                   <b>मंदिर वेळापत्रक</b>
                    <div class="dropdown-content">
-                       <a href="{% url 'dailyseva' %}"><b>मंदिर दैनिक सेवा</b></a>
+                       
                        <a href="{% url 'mahaabhishekh' %}"><b>महाआभिषेक</b></a>
                        <!-- <a href="samugrahi_m.html"><b>अभिषेक समुग्रही</b></a> -->
                    </div>
-               </li>
+               </li> {% endcomment %}
 
                <li><a href="{% url 'Festivals' %}"><b>उत्सव</b></a></li>
 
@@ -83,6 +83,7 @@
             <b>मंदिर E सेवा</b>
              <div class="dropdown-content">
                  <a href="{% url 'poojadetails' %}"><b>पूजा तपशील</b></a>
+                 <a href="{% url 'dailyseva' %}"><b>मंदिर दैनिक सेवा</b></a>
                  <!-- <a href="booking_m.html"><b>ऑनलाइन बुकिंग</b></a> -->
              </div>
          </li>
