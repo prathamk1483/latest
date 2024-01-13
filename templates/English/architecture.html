@@ -1,37 +1,128 @@
 {% extends "English/base.html" %}
-{% block links %}
-    <link rel="stylesheet" href="/static/css/about.css">
-{% endblock links %}
+{% block style %}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  margin: 10rem auto auto -50px;
+  display: flex;
+  height: 500px;
+  width: 110%;
+  border: 2px solid black;
+  border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 1.8px 1.5px 4px 1.5px #eea7a7;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.main:hover{
+    box-shadow: 1px 2px 3px 2px #f58383;
+}
+.rightimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 30%;
+}
+
+.info {
+  display: flex;
+  background-color : white;
+  font-size:large;    
+  margin-top:auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 400px;
+  width: 80%;
+  color: #ff3300;
+  border: 2px solid black;
+}
+
+.top {
+    display: block;
+    height: 40px;
+    width: 80%;
+    margin-bottom: -80px;
+    margin-top: -80px;
+}
+
+.bottom {
+  display: block;
+  height: 90px;
+  width: 80%;
+}
+
+.leftimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 30%;
+}
+.leftimg img,
+.rightimg img {
+  display: block;
+  height : 60%;
+  margin: 5px auto 0; /* Reduce top margin for images */
+}
+.info-head{
+background-color: #f0f0f0;
+margin:5px auto 0;
+margin-top: 10px; /* Reduce top margin for text captions */
+padding:5px 0;
+justify-content: center;
+align-items: center;
+background-color:  #ff3300;
+color:rgb(254,254,254);
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+font-size: 1.5rem;
+font-weight: 550;
+} 
+#info{
+    margin:30px 10px;
+    hyphens: auto;
+}
+{% endblock style %}
 {% block body %}
 <div class="background-container">
     <img src="/static/images/common.png" alt="Background Image" class="background-image">
   </div>
   <div class="row row-top">
-    <h1>Temple Architecture</h1>
+    {% comment %} <h1>Temple Architecture</h1> {% endcomment %}
 </div>
     <header id="top"></header>
     <section class="about-temple">
-        <div class="info-main">
-            <h1 class="info-head">New architecture 
-            </h1>
-            <div class="info-card">
-                <img src="/static/images/2.jpg" alt="temple" class="info-img">
-                <p class="info">
-                    Considering the need of temple renovation to accommodate the rush and reconstruction of the temple, Ingole family members formed the trust in 2000 and then the construction work of the temple as per this beautiful new architecture started after 2006. With the support of donations from devoted, new temple established  within 2 years. New construction decorated with marbles and the latest design.
-                </p>
-            </div>
+      <div class="main">
+        <div class="rightimg">
+          <img src="/static/images/4.jpg" alt="temple" class="info-img">
+          <h1 class="info-head"> Old architecture 
         </div>
-        <div class="info-main">
-            <h1 class="info-head"> Old architecture 
-            </h1>
-            <div class="info-card">
-                <p class="info">
-                    Sidhivinak Ganesh statue found in 16th century and then it established in wadarupi temple by Ingole family. Various Ingole family members looked after temple from then till 2000.
-                    
-                </p>
-                <img src="/static/images/4.jpg" alt="temple" class="info-img">
-            </div>
+        <div class="info">
+          <div class="top">
+            <p id="info">
+              Sidhivinak Ganesh statue found in 16th century and then it established in wadarupi temple by Ingole family. Various Ingole family members looked after temple from then till 2000.
+            </p>
+          </div>
+          <div class="bottom">
+            <p id="info">
+              Considering the need of temple renovation to accommodate the rush and reconstruction of the temple, Ingole family members formed the trust in 2000 and then the construction work of the temple as per this beautiful new architecture started after 2006. With the support of donations from devoted, new temple established within 2 years. New construction decorated with marbles and the latest design.
+            </p>
+          </div>
         </div>
-
+        <div class="leftimg">
+          <img src="/static/images/2.jpg" alt="temple" class="info-img">
+          <h1 class="info-head">New architecture 
+        </div>
+      </div>
     </section>
     {% endblock body %}
