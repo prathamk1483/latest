@@ -58,7 +58,7 @@
                         <a href="{% url 'architecture' %}"><b>मंदिर स्थापत्यशास्त्र </b></a>
                     </div>
                 </li>
-<!--                 <li><a href="{% url 'mahaabhishekh' %}"><b>महाआभिषेक</b></a></li> -->
+                {% comment %} <li><a href="{% url 'mahaabhishekh' %}"><b>महाआभिषेक</b></a></li> {% endcomment %}
                 {% comment %} <li class="dropdown">
                   <b>मंदिर वेळापत्रक</b>
                    <div class="dropdown-content">
@@ -93,12 +93,17 @@
                 <li><a href="{% url 'contact' %}"><b>आमच्याशी संपर्क साधा</b></a></li>
 
                 <li class="dropdown">
-                  <b>भाषा</b>
-                   <div class="dropdown-content">
-                    <a href="{% url 'switch' %}"><b>इंग्रजी</b></a>
-                    <a><b>मराठी</b></a>
-                   </div>
-               </li>
+                    <b>भाषा</b>
+                    <form action="{% url 'switch' %}" method="post">
+                      {% csrf_token %}
+                      <div class="dropdown-content">
+                        <button style="all: unset;" name="button" value="English"><a><b>English</b></a></button>
+                        <a><b>मराठी</b></a>
+                        <button style="all: unset;" name="button" value="Hindi"><a><b>हिंदी</b></a></button>
+                      </div>
+                    </form>
+                     </div>
+                 </li>
             </div>
         </ul>
     </nav>
