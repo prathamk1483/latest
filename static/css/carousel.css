@@ -9,7 +9,6 @@
 
 .container {
   margin-top: 100px;
-  background-image: url('/static/images/bg.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -32,7 +31,6 @@
 
 
 .ganesh-image {
-  margin-top: 145px;
   width:50%;
  
 }
@@ -49,6 +47,7 @@
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.5;
+  
 }
 
 .donation--button {
@@ -71,7 +70,6 @@ a.donation--button:hover {
 @media screen and (max-width: 430px) {
   .container {
     margin-top: 100px;
-    background-image: url('/static/images/bg.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -107,8 +105,6 @@ a.donation--button:hover {
 
 @media screen and (max-width: 700px) {
   .container {
-    margin-top: 100px;
-    background-image: url('/static/images/bg.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -143,8 +139,6 @@ a.donation--button:hover {
 
 @media screen and (max-width: 980px) {
   .container {
-    margin-top: 100px;
-    background-image: url('/static/images/bg.png');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -164,7 +158,6 @@ a.donation--button:hover {
 
   .ganesh-image {
       width: 200px;
-      margin-top: 75px;
   }
   #ganesha--mantra{
      font-size: 1.3rem;
