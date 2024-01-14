@@ -12,10 +12,10 @@ def index(request):
 def switch(request):
     print("Switch function called success")
     global Language
-    if Language=="English":
-        Language="Marathi"
+    if request.method == "POST":
+        Language = request.POST.get('button')
     else:
-        Language="English"
+        return HttpResponse("Something Went Wrong !")
 
     return redirect(f'{Template}')
 
