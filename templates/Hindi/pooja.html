@@ -1,0 +1,98 @@
+{% extends "Hindi/base.html" %}
+{% block links %}
+<link rel="stylesheet" href="/static/css/navbar.css">
+<link rel="stylesheet" href="/static/css/footer.css">
+{% endblock links %}
+{% block style %}
+        body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+     /* Adjust this value according to your footer's height */
+}
+
+.container {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Adjust this value to match the padding-bottom of the body */
+}
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        th {
+            background-color: #FF2525;
+            color: white;
+        }
+        .container mt-5{
+            margin-bottom: 50px;
+        }
+{% endblock style %}
+{% block body %}
+
+<div class="background-container" style="margin-top: -70px;">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+  
+  <div class="container mt-5">
+    <h3>Temple Pooja Details</h3>
+    <p class="mb-4">Explore the various poojas offered at our temple: <br><br>
+    Pooja Booking Office timings <br><br><b>Daily between 7:00 am to 7:00 pm at the Booking Counter Inside Temple Premises</b><br><br>
+    Following Poojas are performed under the explicit instructions and directions of competent priests only <br><br></p>
+    <div class="container mt-5">
+        <h3>मंदिर पूजा तपशील</h3>
+        <p class="mb-4">आमच्या मंदिरातील विविध पूजा तपशील पहा: <br><br>
+        पूजा बुकिंग कार्यालय वेळ <br><br><b>प्रतिदिन सुबह में 7:00 ते संध्याकाळी 7:00 वर्षी आपल्या मंदिर परिसरातील बुकिंग काउंटरवर</b><br><br>
+        पुर्णपणाच्या पूजा केवळ प्राध्यापक पुरोहितांच्या प्राधिकृत मार्गदर्शनानुसार आणि निर्देशानुसार केल्या जातात <br><br></p>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="background-color: #FF2525;">पूजा प्रकार</th>
+                        <th style="background-color: #FF2525;">पूजा वेळ</th>
+                        <th style="background-color: #FF2525;">अक्षरण</th>
+                        <th style="background-color: #FF2525;">काळाची अवधी मिनट</th>
+                        <th style="background-color: #FF2525;">रुपये</th>
+                        <th style="background-color: #FF2525;">व्यक्तींची संख्या</th>
+                        <th style="background-color: #FF2525;">प्रसाद <br>(केवळ उपस्थित पूजेसाठी)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>आवर्तन पंचामृत पूजा</td>
+                        <td>8:00 सुबह में - 10:00 सुबह में</td>
+                        <td>प्रतिदिन</td>
+                        <td>20 मिनट</td>
+                        <td>२५१/-</td>
+                        <td>दोन</td>
+                        <td>२ लड्डू, १ नारियल, १ फल</td>
+                    </tr>
+                    <tr>
+                        <td>आवर्तन षोडशोपचार पूजा</td>
+                        <td>8:00 सुबह में - 10:00 सुबह में</td>
+                        <td>प्रतिदिन</td>
+                        <td>45 मिनट</td>
+                        <td>१००१/-</td>
+                        <td>दो-चार</td>
+                        <td>४ लड्डू, १ नारियल, २ फल</td>
+                    </tr>
+                    <tr>
+                        <td>महाआभिषेक</td>
+                        <td>8:00 सुबह में - 10:00 सुबह में</td>
+                        <td>प्रतिदिन</td>
+                        <td>45 मिनट</td>
+                        <td>१००१/-</td>
+                        <td>दो-चार</td>
+                        <td>कुंकू, हल्दी, गुलाल, 9 खरका, 9 बादाम, 9 सुपारी, 1 जानवे जोड, 1 इत्र की शीशी, 25 बेलपत्र, गुड़ नारियल, 1/2 किलो चावल, हार फूल, 1 लीटर दूध, 250 ग्राम दही, 50 ग्राम घी, चीनी और शहद, श्री की मूर्ति के लिए सोवेल, रिद्धि सिद्धि के लिए वस्त्र, उपरण सूती (दुपट्टा), रसद, अगरबत्ती, कपूर, दूर्वा, फूल, दो फल, आदि। </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
+{% endblock body %}
