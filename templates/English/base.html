@@ -59,9 +59,9 @@
                         </div>
                     </li>
 
-<!--                     <li><a href="{% url 'mahaabhishekh' %}">
+                    {% comment %} <li><a href="{% url 'mahaabhishekh' %}">
                         <div></div><b>Mahabhishek</b>
-                      </a></li> -->
+                      </a></li> {% endcomment %}
 
                     {% comment %} <li class="dropdown">
                       <b>Temple Schedule</b>
@@ -98,9 +98,14 @@
     
                     <li class="dropdown">
                       <b>Language</b>
-                       <div class="dropdown-content">
-                        <a ><b>English</b></a>
-                        <a href="{% url 'switch' %}"><b>Marathi</b></a>
+                      <form action="{% url 'switch' %}" method="post">
+                        {% csrf_token %}
+                        <div class="dropdown-content">
+                          <a><b>English</b></a>
+                          <button style="all: unset;" name="button" value="Marathi"><a><b>मराठी</b></a></button>
+                          <button style="all: unset;" name="button" value="Hindi"><a><b>हिंदी</b></a></button>
+                        </div>
+                      </form>
                        </div>
                    </li>
                 </div>
