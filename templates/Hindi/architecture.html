@@ -1,0 +1,127 @@
+    {% extends "Hindi/base.html" %}
+    {% block style %}
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .main {
+      margin: 10rem auto auto -50px;
+      display: flex;
+      height: 500px;
+      width: 110%;
+      border: 2px solid black;
+      border-radius: 8px;
+      border-radius: 8px;
+      box-shadow: 1.8px 1.5px 4px 1.5px #eea7a7;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .main:hover{
+        box-shadow: 1px 2px 3px 2px #f58383;
+    }
+    .rightimg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 500px;
+      width: 30%;
+    }
+    
+    .info {
+      display: flex;
+      background-color : white;
+      font-size:large;    
+      margin-top:auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      height: 400px;
+      width: 80%;
+      color: #ff3300;
+      border: 2px solid black;
+    }
+    
+    .top {
+        display: block;
+        height: 40px;
+        width: 80%;
+        margin-bottom: -80px;
+        margin-top: -80px;
+    }
+    
+    .bottom {
+      display: block;
+      height: 90px;
+      width: 80%;
+    }
+    
+    .leftimg {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 500px;
+      width: 30%;
+    }
+    .leftimg img,
+    .rightimg img {
+      display: block;
+      height : 60%;
+      margin: 5px auto 0; /* Reduce top margin for images */
+    }
+    .info-head{
+    background-color: #f0f0f0;
+    margin:5px auto 0;
+    margin-top: 10px; /* Reduce top margin for text captions */
+    padding:5px 0;
+    justify-content: center;
+    align-items: center;
+    background-color:  #ff3300;
+    color:rgb(254,254,254);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 550;
+    } 
+    #info{
+        margin:30px 10px;
+        hyphens: auto;
+    }
+    {% endblock style %}
+    {% block body %}
+    <div class="background-container">
+        <img src="/static/images/common.png" alt="Background Image" class="background-image">
+      </div>
+      <div class="row row-top">
+        {% comment %} <h1>Temple Architecture</h1> {% endcomment %}
+    </div>
+        <header id="top"></header>
+        <section class="about-temple">
+          <div class="main">
+            <div class="rightimg">
+              <img src="/static/images/4.jpg" alt="temple" class="info-img">
+              <h1 class="info-head"> पुरानी वास्तुकला
+            </div>
+            <div class="info">
+              <div class="top">
+                <p id="info">
+                    सिद्धिविनायक गणेश की मूर्ति 16वीं शताब्दी में खोजी गई थी और बाद में इंगोले परिवार द्वारा वडरूपी मंदिर में स्थापित की गई थी। इंगोले परिवार के विभिन्न सदस्यों ने तब से 2000 तक मंदिर का रखरखाव किया।                </p>
+              </div>
+              <div class="bottom">
+                <p id="info">
+                    मंदिर के जीर्णोद्धार की आवश्यकता को महसूस करते हुए, इंगोले परिवार ने मंदिर के पुनर्निर्माण के लिए 2000 में एक ट्रस्ट की स्थापना की और फिर 2006 के बाद इस खूबसूरत नई वास्तुकला के अनुसार मंदिर का निर्माण शुरू हुआ। भक्तों के दान की मदद से दो साल में एक नए मंदिर की स्थापना की गई। संगमरमर और नवीनतम डिजाइनों से सजाया गया नया निर्माण।
+                </p>
+              </div>
+            </div>
+            <div class="leftimg">
+              <img src="/static/images/2.jpg" alt="temple" class="info-img">
+              <h1 class="info-head">नई वास्तुकला 
+            </div>
+          </div>
+        </section>
+        {% endblock body %}
