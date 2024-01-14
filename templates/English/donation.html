@@ -21,9 +21,9 @@
             flex-direction: column;
             text-align: center;
             margin: 20px;
-            padding: 10px;
+            padding: 12px;
             background-color: #fffefe;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             width: 75%;
             height: auto;
@@ -62,12 +62,14 @@
         .payment-info {
             background-color: #f7f7f7;
             padding: 50px 0;
+            width:75%;
+            margin:10px auto;
         }
 
         .card {
             border: none;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: 0.3s;
         }
 
@@ -108,7 +110,7 @@
     <img src="/static/images/common.png" alt="Background Image" class="background-image">
   </div>
 
-    <h2 style="text-align: center;margin-top: 20px;">Donations</h2>
+    <h2 style="text-align: center;margin-top: 20px;font-weight: 700;"><bold>Donations</bold></h2>
     <section class="qr">
 
         <div>
@@ -124,7 +126,6 @@
     </section>
 
     <section class="payment-info">
-        <div class="container">
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Payment Information</h2>
@@ -136,7 +137,6 @@
                         <p><strong>IFSC Code:</strong> BKID0009675</p>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 {% endblock body %}
