@@ -6,8 +6,6 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f0f0f0;
-    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
     background-size: cover; /* Make the background image cover the entire element */
     background-repeat: no-repeat;
 }
@@ -38,7 +36,8 @@ nav {
     align-items: center;
     border-radius: 20px;
     overflow: hidden;
-    flex-direction: column;
+    flex-direction: row;
+    gap:50px;
 }
 
 video {
@@ -48,7 +47,14 @@ video {
     border-radius: 10px;
 
 }
-
+#ganesha--mantra {
+    font-size: 1.5rem;
+    color: rgb(32, 36, 40);
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align:bottom;
+  }
 .video-reflection {
     position: absolute;
     top: calc(50% + 10px);
@@ -72,14 +78,22 @@ video {
 <div class="background-container">
     <img src="/static/images/common.png" alt="Background Image" class="background-image">
   </div>
-      
+  <h1>Live Darshan</h1>
       <div class="live-darshan-container">
-        <h1 style="color: rgb(0, 0, 0);font-family:'Times New Roman', Times, serif;"><b>Live Darshan</b></h1>
+        
         <video autoplay loop muted>
             <!-- Provide the path to your video file -->
             <source src="/static/videos/video4.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <div id="ganesha--mantra">
+            <!-- <h1 style="text-align: center;">Guru Vandana</h1> -->
+            &nbsp;&nbsp;&nbsp;&nbsp;गुरुर्ब्रह्मा गुरुर्विष्णु गुरुर्देवो महेश्वरः गुरुर्देव परंब्रह्मः तस्मै श्री गुरवे नमः।<br>
+            &nbsp;&nbsp;&nbsp;अज्ञानतिमिरांधस्य ज्ञानांजनशलाकया चक्षुरौन्मीलितं येन तस्मै श्री गुरवे नमः।<br>
+            &nbsp;&nbsp;अखण्डमण्डलाकारं व्याप्तं येन चराचरं तदपदं दर्शितं येन तस्मै श्री गुरवे नमः।<br>
+            &nbsp;&nbsp;&nbsp;अनेकजन्म संप्राप्तं कर्मबन्ध विदाहिने आत्मज्ञानप्रदानेन तस्मै श्री गुरवे नमः।<br>
+            &nbsp;मन्नाथः श्री जगन्नाथा मदगुरु श्री जगदगुरु मदात्मा सर्वभूतात्मा तस्मै श्री गुरवे नमः।<br>
+        </div>
     </div>
 
         <div id="footer-placeholder"></div>
