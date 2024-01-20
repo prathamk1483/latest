@@ -1,0 +1,100 @@
+{% extends "Hindi/base.html" %}
+{% block style %}
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover; /* Make the background image cover the entire element */
+    background-repeat: no-repeat;
+}
+
+nav {
+    /* Your navigation styles */
+    background-color: #FF4500;
+    color: #fff;
+    padding: 20px; /* Increase padding for the navbar */
+    text-align: center;
+    z-index: 1001;
+}
+
+.footer {
+    background-color: #FF4500;
+    color: #fff;
+    padding: 20px; /* Increase padding for the footer */
+    text-align: center;
+    margin-top: 20px; /* Add margin at the top of the footer */
+}
+
+.live-darshan-container {
+    margin-top: 120px; /* Adjusted margin-top to create a gap between video and navbar */
+    margin-bottom: 100px; /* Add margin at the bottom of the video container */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-direction: row;
+    gap:50px;
+}
+
+video {
+    width: auto;
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 10px;
+
+}
+#ganesha--mantra {
+    font-size: 1.5rem;
+    color: rgb(32, 36, 40);
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align:bottom;
+  }
+.video-reflection {
+    position: absolute;
+    top: calc(50% + 10px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+/* Rest of your styles for other elements */
+
+/* Media queries and other styles remain unchanged */
+
+{% endblock style %}
+
+
+{% block body %}
+<div class="background-container">
+    <img src="/static/images/common.png" alt="Background Image" class="background-image">
+  </div>
+  <h1 style="margin:15px auto 0px;">लाइव दर्शन</h1>
+      <div class="live-darshan-container">
+        
+        <video autoplay loop muted>
+            <!-- Provide the path to your video file -->
+            <source src="/static/videos/video4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="ganesha--mantra">
+            <!-- <h1 style="text-align: center;">Guru Vandana</h1> -->
+            &nbsp;&nbsp;&nbsp;&nbsp;गुरुर्ब्रह्मा गुरुर्विष्णु गुरुर्देवो महेश्वरः गुरुर्देव परंब्रह्मः तस्मै श्री गुरवे नमः।<br>
+            &nbsp;&nbsp;&nbsp;अज्ञानतिमिरांधस्य ज्ञानांजनशलाकया चक्षुरौन्मीलितं येन तस्मै श्री गुरवे नमः।<br>
+            &nbsp;&nbsp;अखण्डमण्डलाकारं व्याप्तं येन चराचरं तदपदं दर्शितं येन तस्मै श्री गुरवे नमः।<br>
+            &nbsp;&nbsp;&nbsp;अनेकजन्म संप्राप्तं कर्मबन्ध विदाहिने आत्मज्ञानप्रदानेन तस्मै श्री गुरवे नमः।<br>
+            &nbsp;मन्नाथः श्री जगन्नाथा मदगुरु श्री जगदगुरु मदात्मा सर्वभूतात्मा तस्मै श्री गुरवे नमः।<br>
+        </div>
+    </div>
+
+        <div id="footer-placeholder"></div>
+{% endblock body %}
