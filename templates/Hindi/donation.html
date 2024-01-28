@@ -1,0 +1,149 @@
+{% extends "Hindi/base.html" %}
+
+{% block links %}
+<link rel="stylesheet" href="/static/css/about.css">
+<link rel="stylesheet" href="/static/css/navbar.css">
+<link rel="stylesheet" href="/static/css/footer.css">
+{% endblock links %}
+
+{% block style %}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+            color: #333333;
+        }
+
+        .qr:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px;
+            padding: 12px;
+            background-color: #fffefe;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .qr img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+          
+        
+        @media (min-width:930px) {
+            .menu {
+                display: flex;
+            }
+
+            .qr {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .qr-content {
+                margin-right: 40px;
+            }
+
+            .hamburger {
+                display: none;
+            }
+        }
+
+        .payment-info {
+            background-color: #f7f7f7;
+            padding: 50px 0;
+            width:75%;
+            margin:10px auto;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align:center;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .card-body {
+                padding: 20px;
+            }
+
+            .card-title {
+                font-size: 24px;
+            }
+
+            .info p {
+                font-size: 16px;
+            }
+        }
+{% endblock style %}
+
+{% block body %}
+<div class="background-container" style="margin-top: -70px;">
+    <img src="/static/images/common.png" alt="पृष्ठभूमि छवि" class="background-image">
+  </div>
+
+    <h2 style="text-align: center;margin-top: 20px;">दान</h2>
+    <section class="qr">
+        <div>
+            <h1><b>जय गणेश</b></h1><br>
+            <p><b>दान करने के लिए आप किसी भी BHIM UPI ऐप के QR कोड को स्कैन कर सकते हैं।</b></p><br>
+            <p>आपने जो भी राशि दी है, वह छोटे या बड़े मूल्य के लिए लोगों के स्वास्थ्य के लिए योगदान किया जाएगा।</p><br>
+        </div>
+        <div>
+            <img src="/static/images/qrcode.jpg" alt="chrome" style="border-radius: 30px;">
+        </div>
+    </section>
+    
+    <section class="payment-info">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">बैंक डिटेल</h2>
+                    <div class="info">
+                        <p><strong>सिद्धि विनायक गणपती संस्थान वायगाव</strong></p>
+                        <p><strong>पैन नं:</strong> AAETS7200C</p>
+                        <p><strong>बैंक विवरण:</strong> बैंक ऑफ इंडिया, जयस्थंभ चौक, अमरावती।</p>
+                        <p><strong>खाता संख्या:</strong> 967510100012849</p>
+                        <p><strong>IFSC कोड:</strong> BKID0009675</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+{% endblock body %}
